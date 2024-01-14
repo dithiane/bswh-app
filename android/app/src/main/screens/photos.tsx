@@ -80,12 +80,12 @@ const Photos = ({ route }: { route: any }) => {
                     <View style={{ flexDirection: 'row' }}>
                         {item.map((photo) => (
                             <View key={photo.id} style={globalStyles.imageContainer}>
-                                <Image source={{ uri: photo.thumbnailUrl }} style={globalStyles.image} />
+                                <Image source={{ uri: photo.thumbnailUrl }} style={globalStyles.image} testID={`photo-thumbnail-${photo.id}`} />
                             </View>
                         ))}
                     </View>
                 )}
-                keyExtractor={(item, index) => index.toString()}
+                keyExtractor={(_, index) => index.toString()}
             />
         </View>
     )
