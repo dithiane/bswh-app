@@ -16,7 +16,7 @@ This is a React Native app that allows users to browse and view photos of differ
 1. Clone the repository:
 
 ```typescript
-git clone https://github.com/your-username/your-repo.git
+git clone https://github.com/dithiane/bswh-app
 ```
 
 2. Install dependencies:
